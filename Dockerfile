@@ -12,11 +12,7 @@ RUN apk add --update --no-cache \
     linux-headers \
     git \
     make
-RUN npm install -g --unsafe-perm \
-    netlify-cli@2.65.7 \
-    semantic-release@17.2.1 \
-    @semantic-release/git@9.0.0 \
-    @semantic-release/gitlab@6.0.5
+RUN npm install -g --unsafe-perm netlify-cli
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
 RUN git config --global user.email "dev@yearend.com"

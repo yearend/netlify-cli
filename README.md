@@ -1,7 +1,7 @@
 # docker netlify-cli
 
 A Docker image for [netlify/cli][a].
-Also includes jq, curl, python, and semantic release.
+Also includes jq, curl, python, git, and build tools.
 
 [a]: https://github.com/netlify/cli
 
