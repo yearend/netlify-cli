@@ -25,7 +25,7 @@ Specify the Netlify CLI command after the image name.
 docker container run -it \
     -e NETLIFY_AUTH_TOKEN=<personal_access_token> \
     -v /path/to/project:/project \
-    yearend/netlify-cli \
+    yearendtax/netlify-cli \
     deploy
 ```
 
