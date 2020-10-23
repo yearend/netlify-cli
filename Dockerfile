@@ -9,6 +9,6 @@ RUN npm install -g --unsafe-perm \
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
 WORKDIR /home/node
-ENTRYPOINT ["/usr/local/bin/netlify"]
+CMD ["/usr/local/bin/netlify"]
 LABEL org.opencontainers.image.authors="Jared Hobbs <jared.hobbs@yearend.com>"
 
