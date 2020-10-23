@@ -1,6 +1,6 @@
 FROM node:alpine
 USER root
-RUN apk add --update --no-cache curl jq
+RUN apk add --update --no-cache curl jq python3
 RUN npm install -g --unsafe-perm \
     netlify-cli \
     semantic-release \
