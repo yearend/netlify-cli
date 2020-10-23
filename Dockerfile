@@ -1,8 +1,11 @@
 FROM node:alpine
 USER root
 RUN apk add --update --no-cache curl jq
-RUN npm install netlify-cli -g --unsafe-perm
-RUN which netlify
+RUN npm install -g --unsafe-perm \
+    netlify-cli \
+    semantic-release \
+    @semantic-release/git \
+    @semantic-release/gitlab
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
 WORKDIR /home/node
