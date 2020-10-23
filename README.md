@@ -6,7 +6,7 @@ Also includes jq, curl, python, and semantic release.
 [a]: https://github.com/netlify/cli
 
 ```sh
-docker image pull yearend/netlify-cli
+docker image pull yearendtax/netlify-cli
 ```
 
 ## Usage
