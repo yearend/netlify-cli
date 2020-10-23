@@ -19,6 +19,8 @@ RUN npm install -g --unsafe-perm \
     @semantic-release/gitlab
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
+RUN git config --global user.email "dev@yearend.com"
+RUN git config --global user.name "semantic-release-bot"
 WORKDIR /home/node
 CMD ["/usr/local/bin/netlify"]
 LABEL org.opencontainers.image.authors="Jared Hobbs <jared.hobbs@yearend.com>"
