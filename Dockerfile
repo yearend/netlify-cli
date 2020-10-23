@@ -10,6 +10,7 @@ RUN apk add --update --no-cache \
     gnupg \
     libgcc \
     linux-headers \
+    git \
     make
 RUN npm install -g --unsafe-perm \
     netlify-cli \
