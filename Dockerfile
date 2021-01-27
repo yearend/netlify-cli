@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:12-alpine
 USER root
 RUN apk add --update --no-cache \
     curl \
@@ -12,6 +12,7 @@ RUN apk add --update --no-cache \
     linux-headers \
     git \
     make
+RUN npm i -g npm@7.4.3
 RUN npm install -g --unsafe-perm netlify-cli
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
