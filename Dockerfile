@@ -12,7 +12,7 @@ RUN apk add --update --no-cache \
     linux-headers \
     git \
     make
-RUN npm i -g npm@7.4.3
+RUN npm i -g npm@7.9.0
 RUN npm install -g --unsafe-perm netlify-cli
 USER node
 ENV NETLIFY_AUTH_TOKEN=""
@@ -21,4 +21,3 @@ RUN git config --global user.name "semantic-release-bot"
 WORKDIR /home/node
 CMD ["/usr/local/bin/netlify"]
 LABEL org.opencontainers.image.authors="Jared Hobbs <jared.hobbs@yearend.com>"
-
