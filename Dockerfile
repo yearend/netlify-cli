@@ -11,7 +11,8 @@ RUN apk add --update --no-cache \
     libgcc \
     linux-headers \
     git \
-    make
+    make \
+    docker
 RUN npm i -g npm@7.9.0
 RUN npm install -g --unsafe-perm netlify-cli
 USER node
